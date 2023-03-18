@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vending Machine</title>
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/layout.css">
+</head>
+
+<body>
+	<header>
+		<a href="#"><img class="logo" src="./img/bg.svg" alt="Cocacola Vending Machine"></a>
+	</header>
+
+	<main class="container">
+		<div class="machine-wrap">
+			<section class="item-wrap">
+				<button class="item">
+					<img src="./img/redcola.svg" alt="Original_Cola">
+					<p>Original_Cola</p>
+					<p>1000원</p>
+				</button>
+				<button class="item"></button>
+				<button class="item"></button>
+				<button class="item"></button>
+				<button class="item"></button>
+				<button class="item"></button>
+			</section>
+
+			<section class="input-wrap">
+				<span class="currentMoney">
+					<p>잔액:</p>
+					<P>1,000원</P>
+				</span>
+				<button class="input-btn return" type="button">거스름돈 반환</button>
+				<input class="input-money" type="number">
+				<button class="input-btn submit" type="submit">입금</button>
+				<ul class="input-items list">
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+				</ul>
+				<button class="input-btn get" type="submit">획득</button>
+			</section>
+		</div>
+
+		<div class="money">
+			<span class="pocketMoney">
+				<p>소지금 :</p>
+				<P>25,000원</P>
+			</span>
+		</div>
+
+		<div class="inventory">
+			<section class="inventory-wrap">
+				<p class="header">획득한 음료</p>
+				<ul class="inventory-items list">
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+					<li class="item">
+						<img src="./img/redcola.svg" alt="Original_Cola">
+						<p>Original_Cola</p>
+						<p>1</p>
+					</li>
+				</ul>
+				<p class="footer">총금액 : 9,000원</p>
+			</section>
+		</div>
+	</main>
+
+</body>
+
+</html>
