@@ -1,5 +1,5 @@
 /* Layout */
-body, p, ul, input{
+body, p, ul, input, h1, h2{
 	margin: 0;
 	padding: 0;
 }
