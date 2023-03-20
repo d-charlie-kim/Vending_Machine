@@ -1,0 +1,208 @@
+/* Layout */
+body, p, ul, input, h1, h2, button, img{
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin: auto;
+	width: 436px;
+	height: 204px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 43px;
+}
+
+.logo {
+	width: 386px;
+	height: 180px;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: 
+	"machine money"
+	"machine inventory";
+	column-gap: 28px;
+	row-gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Machine Part */
+/* machine - item part */
+.machine-wrap {
+	grid-area: machine;
+	width: 360px;
+	height: 545px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
+}
+
+.machine-item-wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.machine-item {
+	width: 94px;
+	height: 130px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	border: none;
+	background-color: white;
+	text-align: center;
+}
+
+.machine-item img {
+	aspect-ratio: 35 / 65;
+	margin-bottom: 4px;
+}
+
+.machine-item .name {
+	font-size: 9px;
+	margin-bottom: 7px;
+}
+
+.machine-item .price {
+	margin: 0 13px;
+	padding: 3px;
+	box-sizing: border-box;
+	border-radius: 50px;
+	background-color: #6327FE;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* machine - input part */
+.input-wrap {
+	width: 306px;
+	height: 194px;
+	display: grid;
+	grid-template-areas:
+	"a a b"
+	"c c d"
+	"e e f"
+	"e e f"
+	"e e f";
+	gap: 12px;
+}
+
+.currentMoney {
+	grid-area: a;
+	display: flex;
+	height: 33px;
+	padding: 0 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input-btn.return {
+	grid-area: b;
+	height: 33px;
+}
+
+.input-money {
+	grid-area: c;
+	height: 33px;
+}
+
+.input-btn.submit {
+	grid-area: d;
+	height: 33px;
+}
+
+.input-items.list {
+	height: 106px;
+	grid-area: e;
+}
+
+.input-btn.get {
+	grid-area: f;
+	height: 106px;
+}
+
+/* Money Part */
+.money {
+	grid-area: money;
+	width: 360px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pocketMoney {
+	width: 306px;
+	height: 32px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Inventory Part */
+.inventory {
+	grid-area: inventory;
+	width: 360px;
+	height: 474px;
+	padding: 25px 27px 26px 27px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.inventory-title {
+	display: inline-block;
+	margin-bottom: 13px;
+}
+
+.inventory-items {
+	height: 364px;
+}
+
+.inventory-price {
+	margin-top: 6px;
+	float: right;
+}
+
+/* item list */
+.list {
+	display: flex;
+	flex-direction: column;
+	padding-top: 12px;
+	box-sizing: border-box;
+	gap: 6px;
+}
+
+.list .item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 12px;
+}
+
+.list .item img {
+	aspect-ratio: 18 / 33;
+	height: 32.93px;
+	margin: 0 10px;
+}
+
+.item .name {
+	flex-grow: 1;
+}
+
+.item .count {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
