@@ -4,8 +4,10 @@ body, p, ul, input, h1, h2, button, img{
 	padding: 0;
 }
 
+
+
 header {
-	margin: auto;
+	margin: 0 auto;
 	width: 436px;
 	height: 204px;
 	display: block;
