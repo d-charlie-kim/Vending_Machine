@@ -1,0 +1,16 @@
+@media (max-width: 747px) {
+	.container {
+		grid-template-areas: 
+		"machine"
+		"money"
+		"inventory";
+		}	
+
+		header {
+			margin-bottom: 8px;
+		}
+
+		.logo {
+			width: 188px;
+		}
+	}

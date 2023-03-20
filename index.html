@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="./css/layout.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/media.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,10 +29,16 @@
 					<p class="name">Original_Cola</p>
 					<p class="price">1000원</p>
 				</button>
-				<button class="machine-item">
+				<button class="machine-item" disabled>
 					<img src="./img/violetcola.svg">
 					<p class="name">Violet_Cola</p>
 					<p class="price">1000원</p>
+					<div class="disabled">
+						<div>
+							<div>
+								품절
+							</div>
+						</div>
 				</button>
 				<button class="machine-item">
 					<img src="./img/yellowcola.svg">
@@ -113,7 +122,6 @@
 			<p class="inventory-price">총금액 : 9,000원</p>
 		</div>
 	</main>
-
 </body>
 
 </html>

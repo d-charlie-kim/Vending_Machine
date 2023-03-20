@@ -1,4 +1,3 @@
-/* Layout */
 .a11y-hidden {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
@@ -10,13 +9,62 @@
 	position: absolute;
 }
 
+p, h1, h2, button {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
-	background-color: gainsboro;
+	background-color: #EAE8FE;
 }
 
 /* Machine Part */
 .machine-wrap {
 	background-color: white;
+}
+
+.machine-item {
+	background-color: white;
+	position: relative;
+}
+
+.machine-item:active {
+	box-shadow: 0 0 0 3px #6327FE;
+}
+
+.disabled {
+	width: inherit;
+	height: inherit;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: inherit;
+	opacity: 80%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disabled > div, .disabled > div > div {
+	width: 45px;
+	height: 21px;
+	font-size: 14px;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;
+}
+
+.disabled > div {
+	height: 27px;
+	width: 51px;
+	transform: rotate(-23deg);
+}
+
+.machine-item:disabled {
+	color: black;
 }
 
 .currentMoney {
@@ -39,9 +87,13 @@ body {
 	border: 1px solid #BDBDBD;
 	border-radius: 5px;
 	font-size: 13px;
-	color: #BDBDBD;
+	color: black;
 	font-weight: 500;
 	padding-left: 6px;
+}
+
+.input-money::placeholder {
+	color: #BDBDBD;
 }
 
 .input-items.list {
@@ -88,7 +140,6 @@ body {
 /* item list */
 .list {
 	overflow-y: auto;
-
 	border: 1px solid #BDBDBD;
 }
 
