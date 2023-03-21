@@ -13,10 +13,6 @@ p, h1, h2, button {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-body {
-	background-color: #EAE8FE;
-}
-
 /* Machine Part */
 .machine-wrap {
 	background-color: white;

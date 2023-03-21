@@ -1,17 +1,42 @@
 @media (max-width: 747px) {
 	.container {
+		margin: 0;
 		grid-template-areas: 
 		"machine"
 		"money"
 		"inventory";
-		}	
-
-		header {
-			margin-bottom: 8px;
-			height: auto;
-		}
-
-		.logo {
-			width: 188px;
-		}
+		gap: 20px;
 	}
+	
+	header {
+		margin-bottom: 18px;
+		height: 88px;
+	}
+	
+	.machine-wrap {
+		width: 306px;
+		height: 486px;
+}
+
+	.money {
+		width: 306px;
+		height: 32px;
+		margin-bottom: 21px;
+	}
+
+	.inventory {
+		width: 306px;
+		padding: 0;
+	}
+
+	.logo {
+		width: 188px;
+	}
+
+}
+
+@media (min-width: 748px) {
+	body {
+		background-color: #EAE8FE;
+	}
+}
